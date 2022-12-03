@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+/* font-family: 'Roboto Slab', serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsla(298, 69%, 71%, 1);
+
+  --bg1: linear-gradient(
+    0deg,
+    hsla(298, 69%, 71%, 1) 0%,
+    hsla(293, 78%, 82%, 1) 45%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  --bg2: -moz-linear-gradient(
+    0deg,
+    hsla(298, 69%, 71%, 1) 0%,
+    hsla(293, 78%, 82%, 1) 45%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  --bg3: -webkit-linear-gradient(
+    0deg,
+    hsla(298, 69%, 71%, 1) 0%,
+    hsla(293, 78%, 82%, 1) 45%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  --bg_filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E482E8", endColorstr="#EDAEF5", GradientType=1 );
+
+  --rad: 23px;
+}
+
+.NULL {
+  color: #fcfcfc;
+  color: #edaef5;
+  color: #e482e8;
+  color: #db56db;
+  color: #d22acf;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+}
+
+span,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.primary {
+  background: var(--bg1);
+  filter: var(--bg_filter);
+  color: white;
+  border: 1px solid ;
+  border-radius: var(--rad);
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid var(--bg);
+  color: var(--bg);
+  border-radius: var(--rad);
+}
